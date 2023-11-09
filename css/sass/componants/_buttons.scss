@@ -1,0 +1,14 @@
+button {
+    font-size: $mainFontSize;
+    background-color: orangered;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        transition: 0.2s;
+        &:hover {
+opacity: 60%;
+        cursor: pointer;
+        }
+        }

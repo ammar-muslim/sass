@@ -1,0 +1,32 @@
+@mixin maxMopile {
+@media (max-width : $maxMobile) {
+    @content
+}
+};
+
+@mixin overlay {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+@mixin prefixer($prop , $value , $prefixes) {
+@each $prefix in $prefixes {
+#{"-" + $prefix +"-"+ $prop } : $value;
+}
+#{$prop} : $value;
+}
+
+@mixin keyFrame ($anemName) {
+    @-moz-keyframes#{$anemName}{
+        @content;
+    }
+    @-webkit-keyframes#{$anemName}{
+        @content;
+    }
+    @keyframes#{$anemName}{
+    @content;
+    }
+}

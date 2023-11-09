@@ -1,0 +1,15 @@
+*{
+@include prefixer(box-sizing , border-box , moz  webkit)
+}
+
+.container {
+width: 1200px;
+margin: auto;
+padding: 0px 15px;
+position: relative;
+}
+
+
+.clear-fix {
+clear: both;
+}
